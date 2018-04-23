@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Patua+One");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f7f7f7;
+  color: #f75239;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.header {
+  font-family: "Patua One", cursive;
+  background: #402f3f;
+  width: 100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  position: relative;
+}
+
+.title {
+  color: #ecf0f1;
+}
+
+.container {
+  height: 100%;
+  color: #402f3f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+ul, nav {
+  list-style: none;
+  display: flex;
+  margin: 0;
+}
+
+nav {
+  width: 100%;
+  justify-content: space-between;
+  background: #402f3f;
+}
+
+nav li {
+  font-size: 20px;
+  padding: 0.5em;
+  margin-right: 1em;
+  color: #f75239;
+  cursor: pointer;
+}
+
+.display__session {
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+}
+
+.timer-display {
+  font-family: "Patua One", cursive;
+  display: block;
+  cursor: pointer;
+  text-align: center;
+  padding: 1em;
+  color: #402f3f;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.timer-display p {
+  margin: 0;
+}
+
+.display__time-left {
+  display: block;
+  width: 300px;
+  font-size: 120px;
+  margin: 0;
+  line-height: 1;
+}
+
+.display__end-time {
+  font-family: "Open Sans", sans-serif;
+}
+
+.checkmarks {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1.5em;
+  padding: 0.6em 0;
+}
+
+.checkmarks svg {
+  opacity: 0.5;
+}
+
+.info {
+  height: 100%;
+  display: none;
+  line-height: 1.5;
+  font-size: 18px;
+  margin: 0 1em;
+  font-family: "Open Sans", sans-serif;
+  overflow: hidden;
+}
+
+.info span {
+  display: block;
+  text-align: right;
+  font-size: 16px;
+}
+
+.settings {
+  display: none;
+  top: 60px;
+  right: 1em;
+  position: absolute;
+  background: #f7f7f7;
+  margin-left: auto;
+  padding: 1em;
+  font-family: "Open Sans", sans-serif;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.setting {
+  color: #402f3f;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.setting span {
+  width: 100%;
+  text-align: right;
+  font-size: 16px;
+}
+
+.length {
+  display: flex;
+}
+
+.length span {
+  font-size: 16px;
+  text-align: center;
+  user-select: none;
+  width: 25px;
+}
+
+.setting button,
+.save-buttons button {
+  font-family: "Patua One", cursive;
+  font-size: 16px;
+  background: #f75239;
+  margin: 0 5px;
+  color: #ecf0f1;
+  border: none;
+  outline: none;
+}
+
+.setting button:hover,
+.save-buttons button:hover {
+  cursor: pointer;
+  background: #402f3f;
+}
+
+.save-buttons button {
+  width: 100%;
+  padding: .5em;
+}
+
+.save-buttons {
+  display: flex;
+  margin-top: 1em;
+}
+
+.footer {
+  width: 100%;
+  background: #402f3f;
+  /* margin-top: 1.6em; */
+  color: #ecf0f1;
+  font-size: 12px;
+  padding: 1em;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+a {
+  text-decoration: none;
+  color: #f75239;
+}
+
+@media (min-width: 444px) {
+  .display__time-left {
+    font-size: 170px;
+    width: 420px;
+  }
+}

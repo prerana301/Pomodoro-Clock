@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Clock</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.5 47.5" style="display:none">
+        <symbol id="tomato">
+            <defs>
+                <clipPath id="a">
+                    <path d="M0 38h38V0H0v38z" />
+                </clipPath>
+            </defs>
+            <g clip-path="url(#a)" transform="matrix(1.25 0 0 -1.25 0 47.5)">
+                <path d="M23.494 31.656c-.687 0-1.352-.066-1.99-.177-.82.105-2.74.23-3.593.23-8.472 0-15.886-3.176-15.886-14.297 0-9.036 7.05-16.361 16.976-16.361 9.927 0 17.973 7.325 17.973 16.36 0 11.25-9.384 14.245-13.48 14.245"
+                    fill="#f75239" />
+                <path d="M9.439 36.909c1.637-1.636 2.77-2.266 3.274-4.91.298-1.564 2.266-1.51 2.266-1.51s-3.903-1.764-5.54-3.4c0 0 4.91 1.636 6.547 1.636 0 0 3.273-1.636 3.273-3.273 0 0 0 3.273-1.636 3.273 0 0 4.909 0 4.909-3.273 0 0 0 4.91-1.636 4.91 0 0 4.911 1.637 6.547 0 0 0-1.685 1.72-4.911 1.637 0 0 1.638 1.637 4.911 1.637 0 0-5.288 1.51-6.924-1.763 0 0-1.386 1.385 1.384 4.155 0 0-4.28-.755-4.28-4.03 0 0-1.552.04-2.644 1.26-2.141 2.392-5.54 3.65-5.54 3.65"
+                    fill="#77b255" />
+            </g>
+        </symbol>
+
+    </svg>
+    <header class="header">
+        <nav>
+            <li class="title">Pomodoro Clock</li>
+            <ul>
+                <li id="#settings" >settings</li>
+                <li>&#8505;</li>
+            </ul>
+
+
+        </nav>
+    </header>
+    <div class="container">
+        <div class="timer-display">
+            <span class="display__session">Focus</span>
+            <span class="display__time-left">25:00</span>
+            <p class="display__end-time">Click to Start or Pause/Resume</p>
+            <div class="checkmarks">
+                <svg width="48" height="48">
+                    <use xlink:href="#tomato" class="" />
+                </svg>
+                <svg width="48" height="48">
+                    <use xlink:href="#tomato" class="" />
+                </svg>
+                <svg width="48" height="48">
+                    <use xlink:href="#tomato" class="" />
+                </svg>
+                <svg width="48" height="48">
+                    <use xlink:href="#tomato" class="" />
+                </svg>
+            </div>
+        </div>
+
+
+
+        <div class="info">
+            <h1>Pomodoro Technique</h1>
+            <p>Francesco Cirillo first came up with this time management technique back in the late 1980s. The essential principle
+                is that work is better managed in intervals, traditionally 25 minutes, followed by short breaks. </p>
+            <h2>The Original Six Steps:</h2>
+            <ol>
+                <li>Decide on the task to be done.</li>
+                <li>Set the pomodoro timer (traditionally to 25 minutes)</li>
+                <li>Work on the task.</li>
+                <li>End work when the timer rings and put a checkmark on a piece of paper</li>
+                <li>If you have fewer than four checkmarks, take a short break (3–5 minutes), then go to step 2.</li>
+                <li>After four pomodoros, take a longer break (15–30 minutes), reset your checkmark count to zero, then go to
+                    step 1.</li>
+            </ol>
+            <span>For more info go to
+                <a href="https://en.wikipedia.org/wiki/Pomodoro_Technique">Wikipedia</a>
+            </span>
+        </div>
+
+
+    </div>
+    <div class="settings">
+        <div class="setting">
+            <span>Focus Session: </span>
+            <div class="length">
+                <button data-amt="+1">&plus;</button>
+                <span>25</span>
+                <button data-amt="-1">&minus;</button>
+            </div>
+        </div>
+        <div class="setting">
+            <span>Short Break: </span>
+            <div class="length">
+                <button data-amt="+1">&plus;</button>
+                <span>5</span>
+                <button data-amt="-1">&minus;</button>
+            </div>
+
+        </div>
+        <div class="setting">
+            <span>Long Break: </span>
+            <div class="length">
+                <button data-amt="+1">&plus;</button>
+                <span>30</span>
+                <button data-amt="-1">&minus;</button>
+            </div>
+        </div>
+        <div class="save-buttons">
+            <button>Save</button>
+            <button>Default</button>
+        </div>
+    </div>
+    <footer class="footer">
+        <span>Designed &amp; Coded by
+            <a href="jimmyguzman.com" target="_blank">Jimmy Guzman</a>
+        </span>
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
